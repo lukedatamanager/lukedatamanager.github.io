@@ -1,0 +1,11 @@
+{% if page.tags[0] %}
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+      {% assign sorted_tags = page.tags | sort %}
+      {% for tag in sorted_tags %}
+        <a href="{{ tag | slugify | prepend: '#' | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag">{{ tag }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      {% endfor %}
+    </span>
+  </p>
+{% endif %}

@@ -1,0 +1,89 @@
+<script>
+  (function() {
+    var archiveRoot = document.querySelector("[data-tag-filter-archive]");
+
+    if (!archiveRoot) {
+      return;
+    }
+
+    var filterLinks = Array.prototype.slice.call(
+      archiveRoot.querySelectorAll("[data-tag-filter]")
+    );
+    var postItems = Array.prototype.slice.call(
+      archiveRoot.querySelectorAll("[data-tag-entry]")
+    );
+    var emptyState = archiveRoot.querySelector("[data-tag-empty]");
+
+    function normalizeFilter(value) {
+      if (!value) {
+        return "all";
+      }
+
+      return value.replace(/^#/, "") || "all";
+    }
+
+    function hasFilter(slug) {
+      return filterLinks.some(function(link) {
+        return link.dataset.tagFilter === slug;
+      });
+    }
+
+    function applyFilter(slug, updateHash) {
+      var activeFilter = hasFilter(slug) ? slug : "all";
+      var visibleCount = 0;
+
+      filterLinks.forEach(function(link) {
+        var isActive = link.dataset.tagFilter === activeFilter;
+        link.classList.toggle("is-active", isActive);
+
+        if (isActive) {
+          link.setAttribute("aria-current", "true");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+
+      postItems.forEach(function(item) {
+        var tags = (item.dataset.tags || "").split(",").filter(Boolean);
+        var isVisible = activeFilter === "all" || tags.indexOf(activeFilter) !== -1;
+
+        item.hidden = !isVisible;
+
+        if (isVisible) {
+          visibleCount += 1;
+        }
+      });
+
+      if (emptyState) {
+        emptyState.hidden = visibleCount !== 0;
+      }
+
+      if (!updateHash) {
+        return;
+      }
+
+      if (activeFilter === "all") {
+        if (window.location.hash) {
+          history.replaceState(null, "", window.location.pathname + window.location.search);
+        }
+
+        return;
+      }
+
+      history.replaceState(null, "", "#" + activeFilter);
+    }
+
+    filterLinks.forEach(function(link) {
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        applyFilter(link.dataset.tagFilter, true);
+      });
+    });
+
+    window.addEventListener("hashchange", function() {
+      applyFilter(normalizeFilter(window.location.hash), false);
+    });
+
+    applyFilter(normalizeFilter(window.location.hash), false);
+  })();
+</script>

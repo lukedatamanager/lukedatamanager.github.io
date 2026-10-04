@@ -1,7 +1,145 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: single
+classes: wide
+title: "Luke Marsden"
 author_profile: true
+permalink: /
+header:
+  overlay_image: "/assets/images/hero.png"
+  overlay_filter: 0.5
+excerpt: "Scientific data manager"
 ---
+
+<style>
+	.layout--single .sidebar .author__name {
+		display: none !important;
+	}
+
+	.layout--single .sidebar .author__avatar {
+		display: block !important;
+		width: 80% !important;
+		max-width: 336px !important;
+		height: auto !important;
+		margin: 0 auto 0.75rem !important;
+		border-radius: 0 !important;
+		overflow: visible !important;
+		opacity: 1 !important;
+	}
+
+	.layout--single .sidebar .author__avatar a {
+		display: block !important;
+	}
+
+	.layout--single .sidebar .author__avatar img {
+		display: block !important;
+		width: 100% !important;
+		max-width: 336px !important;
+		height: auto !important;
+		aspect-ratio: 4 / 5;
+		object-fit: cover !important;
+		border-radius: 0.45rem !important;
+		opacity: 1 !important;
+		filter: none !important;
+		transition: none !important;
+		clip-path: none !important;
+	}
+
+	.layout--single .sidebar .author__avatar img:hover,
+	.layout--single .sidebar .author__avatar img:focus {
+		opacity: 1 !important;
+		filter: none !important;
+	}
+
+	@media (max-width: 63.9375em) {
+		.layout--single .sidebar .author__avatar,
+		.layout--single .sidebar .author__avatar img {
+			max-width: 220px !important;
+		}
+	}
+
+	.home-about__card--help {
+		position: relative;
+		padding: 1.25rem 1.3rem;
+		border: 1px solid #c9d5e2;
+		border-radius: 0.6rem;
+		background: linear-gradient(145deg, #ffffff 0%, #f4f8fc 100%);
+		box-shadow: 0 16px 30px rgba(27, 31, 35, 0.1);
+		overflow: hidden;
+	}
+
+	.home-about__card--help::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 4px;
+		background: linear-gradient(90deg, #1f6fb2, #2c90b0);
+	}
+
+	.home-about__card-intro {
+		margin: 0.25rem 0 0.85rem;
+		color: #425466;
+		line-height: 1.6;
+	}
+
+	.home-about__service-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.home-about__service-list li {
+		position: relative;
+		padding-left: 1.05rem;
+		line-height: 1.55;
+	}
+
+	.home-about__service-list li::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0.58em;
+		width: 0.45rem;
+		height: 0.45rem;
+		border-radius: 999px;
+		background: #2c90b0;
+	}
+
+	.home-about__service-list li + li {
+		margin-top: 0.5rem;
+	}
+</style>
+
+<section class="home-about">
+	<p class="home-about__lead">
+		I'm a scientific data manager at the Norwegian Meteorological
+		Institute and the University Centre in Svalbard.
+	</p>
+
+	<p>
+		My motivation is to help transform how we work with 
+		data — from building data workflows and software, 
+		to helping people and projects publish and reuse data, 
+		and developing standardised approaches to documenting data.
+	</p>
+
+	<p>
+		Ultimately, I want to help maximise the real world 
+		impact that we can extract from environmental data.
+	</p>
+	
+	<div class="home-about__grid">
+		<article class="home-about__card home-about__card--help">
+			<h2>How I Can Help</h2>
+			<ul class="home-about__service-list">
+				<li>Talks and training on scientific data management</li>
+				<li>Collaboration on data-centric research projects</li>
+			</ul>
+		</article>
+	</div>
+	<br>
+	<p class="home-about__cta">
+		<a class="btn btn--primary" href="/contact/">Get in touch</a>
+	</p>
+</section>
