@@ -5,7 +5,6 @@ last_modified_at: 2026-10-04
 categories:
   - Blog
 tags:
-  - read this first
   - discovery
   - reuse
 ---

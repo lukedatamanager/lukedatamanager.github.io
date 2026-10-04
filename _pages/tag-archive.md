@@ -1,6 +1,6 @@
 ---
-title: "Posts by Tag"
-permalink: /tags/
+title: "Blog Posts"
+permalink: /blog/
 layout: single
 entries_layout: list
 ---
