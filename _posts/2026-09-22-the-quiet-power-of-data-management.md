@@ -1,7 +1,7 @@
 ---
-title: "How Data Management Can Help Save the World"
+title: "The Quiet Power of Data Management"
 excerpt: "Why better data management practices are a catalyst to enable evidence to shape real-world decisions."
-last_modified_at: 2026-10-04
+last_modified_at: 2026-10-05
 categories:
   - Blog
 tags:
