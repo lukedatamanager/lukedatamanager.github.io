@@ -1,6 +1,8 @@
 ---
 title: "How to Tell One Thing from Another"
 excerpt: "Why good identifiers matter for linking records, reducing ambiguity, and making data dependable across systems."
+teaser: "/assets/images/thumbnails/how-to-tell-one-thing-from-another.png"
+classes: no-title
 last_modified_at: 2026-10-04
 categories:
   - Blog
@@ -9,6 +11,8 @@ tags:
   - discovery
   - identifiers
 ---
+
+<img src="/assets/images/thumbnails/how-to-tell-one-thing-from-another.png" alt="Why good identifiers matter for linking records, reducing ambiguity, and making data dependable across systems." style="display:block; width:100%; max-width:720px; height:auto; margin:0 auto 1.5rem; border-radius:0.5rem;" />
 
 At the end of February 2020, I started a temporary position as an Information Analyst at NHS Digital, joining a very friendly and welcoming team working with social care data. It was a dark yet fascinating time to begin working in healthcare. Cases of the newly identified COVID-19 disease were surging across Italy, some warning that an uncontrolled outbreak was imminent in the UK.
 

@@ -219,6 +219,13 @@ search: false
 	border-bottom: 0;
 }
 
+body.no-title .page__title,
+body.no-title .page__title a,
+.page.no-title .page__title,
+.page.no-title .page__title a {
+	display: none;
+}
+
 .tag-filter-archive__filter {
 	display: inline-flex;
 	align-items: center;

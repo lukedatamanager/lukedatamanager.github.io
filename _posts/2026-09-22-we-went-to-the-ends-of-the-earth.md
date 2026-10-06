@@ -1,7 +1,9 @@
 ---
 title: "We Went to the Ends of the Earth. What Did We Do With Our Data?"
 excerpt: "We go to extraordinary lengths to collect scientific data. Shouldn’t we be equally ambitious about how we publish and share what we bring home?"
-last_modified_at: 2026-09-28
+teaser: "/assets/images/thumbnails/we-went-to-the-ends-of-the-earth.png"
+classes: no-title
+last_modified_at: 2026-10-05
 categories:
   - Blog
 tags:
@@ -9,6 +11,8 @@ tags:
   - discovery
   - granularity
 ---
+
+<img src="/assets/images/thumbnails/we-went-to-the-ends-of-the-earth.png" alt="We go to extraordinary lengths to collect scientific data. Shouldn’t we be equally ambitious about how we publish and share what we bring home?" style="display:block; width:100%; max-width:720px; height:auto; margin:0 auto 1.5rem; border-radius:0.5rem;" />
 
 I enjoy watching documentaries about scientific expeditions. Whether it is a voyage deep into the Amazon basin[^1] or a mission across Greenland with an elite climbing team[^2], I am fascinated by how much some of us are prepared to strive in the interest of advancing our collective knowledge. Such expeditions are not for the faint hearted, often testing the limits of human endurance, adaptability, and technology.
 

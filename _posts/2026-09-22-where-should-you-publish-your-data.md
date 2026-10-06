@@ -1,13 +1,17 @@
 ---
 title: "Where should you publish your data?"
 excerpt: "Choosing a repository is really about choosing the discovery services and research communities through which your data will be found and reused."
-last_modified_at: 2026-10-04
+teaser: "/assets/images/thumbnails/where-should-you-publish-your-data.png"
+classes: no-title
+last_modified_at: 2026-10-06
 categories:
   - Blog
 tags:
   - discovery
   - aggregation
 ---
+
+<img src="/assets/images/thumbnails/where-should-you-publish-your-data.png" alt="Choosing a repository is really about choosing the discovery services and research communities through which your data will be found and reused." style="display:block; width:100%; max-width:720px; height:auto; margin:0 auto 1.5rem; border-radius:0.5rem;" />
 
 There are hundreds of repositories around the world that host scientific data, ranging from repositories tied to individual research institutions, up to national, regional and international repositories that may be discipline specific or generic. For someone new to publishing data, this breadth and diversity of selection can resemble an extensive and elaborate menu at a new, critically acclaimed restaurant in town. You know you want to eat there, but what should you pick? Each dish is accompanied by a mouth-watering description of what it offers. But which is best for you? And how can you be sure that you won’t be left wishing you had ordered what your friend did instead?
 

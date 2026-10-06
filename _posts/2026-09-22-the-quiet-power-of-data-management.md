@@ -1,6 +1,8 @@
 ---
 title: "The Quiet Power of Data Management"
 excerpt: "Why better data management practices are a catalyst to enable evidence to shape real-world decisions."
+teaser: "/assets/images/thumbnails/the-quiet-power-of-data-management.png"
+classes: no-title
 last_modified_at: 2026-10-05
 categories:
   - Blog
@@ -8,6 +10,8 @@ tags:
   - discovery
   - reuse
 ---
+
+<img src="/assets/images/thumbnails/the-quiet-power-of-data-management.png" alt="The pyramid of knowledge, with data at the base and wisdom at the peak." style="display:block; width:100%; max-width:720px; height:auto; margin:0 auto 1.5rem; border-radius:0.5rem;" />
 
 Imagine walking into the world’s largest library. It’s five stories tall and filled with millions of books. Together, they form the most extensive archive of human knowledge ever assembled; a treasure trove capable of reshaping how we see the world and, more importantly, how we act within it. Economic trends that could motivate us to deliver a fairer future, health statistics that might save lives, and detailed and widespread measurements of our changing planet—from the melting of glaciers to the decline of biodiversity.
 
